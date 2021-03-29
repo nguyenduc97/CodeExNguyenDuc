@@ -1,0 +1,126 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	height: 100vh;
+	background-color: rgb(32,35,48);	
+}
+#logo{
+	position: relative;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	animation: 0.5s ease-in-out;
+	/*animation:fill 8s ease forwards;*/
+}
+
+
+#logo path:nth-child(n){
+	stroke-dasharray: 500;
+	stroke-dasharray: 1000;
+	animation:dash 2s linear forwards;
+}
+
+@keyframes dash{	
+	to{
+		stroke-dasharray: 0;		
+	}
+}
+@keyframes fill{
+
+	from{
+		fill: transparent;
+	}
+	
+	to{
+		fill: red;
+	}
+}
+.m__div_er{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	top: 10%;
+	
+}
+.m__div_er p{
+	font-size: 50px;
+	color: white;
+	padding: 20px;
+	width: 50%;
+	/*background-image: linear-gradient(#00A5A8 0%, #4DCBCD 100%);*/
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	text-align: center;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	text-transform: uppercase;
+	font-weight: 500;
+	/*box-shadow: 1px 0px 20px rgb(204 150 150 / 25%);*/
+}
+
+.m__div_btn {
+    position: relative;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.m__div_btn .m__btn_Home{
+	position: relative;
+	padding: 10px 20px;
+	border: none;
+	background: #b5b5b573;
+	box-shadow: 1px 0px 20px rgb(0 0 0 / 10%);
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	/*border-bottom: 2px solid red;*/
+}
+.m__div_btn .m__btn_Home::before {  
+	transform: scaleX(0);
+	transform-origin: bottom right;
+}
+.m__div_btn .m__btn_Home:focus{
+	outline: none;
+}
+.m__div_btn .m__btn_Home:hover{
+	color: black;
+}
+.m__div_btn .m__btn_Home:hover::before {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+	border-bottom: 2px solid #fff;  
+}
+
+.m__div_btn .m__btn_Home::before {
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	inset: 0 0 0 0;
+	background: hsl(200 100% 80%);
+	z-index: -1;
+	transition: transform .3s ease;
+}
+
+@media (max-width:1208px) {
+	body{
+		flex-direction: column;
+	}
+	.m__div_er {
+		margin-right: 5px;
+		margin-left: 5px;
+		top: 2%;
+	}
+	.m__div_er p {
+		width: 100%;
+		font-size: 20px;
+	}
+}
