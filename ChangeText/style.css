@@ -22,6 +22,7 @@ section{
 	background-image: linear-gradient(to right, #ef3b36 , #ffffff);
 	font-weight: 500px;
 	font-size: 50px;
+	animation: changeBg 10s ease infinite;
 }
 #home h1{
 	/*margin-right: 20px;*/
@@ -34,11 +35,31 @@ section{
 	animation: changetext 10s linear infinite;
 	/*text-transform:lowercase;*/
 }
+#home .info{
+	position: absolute;
+	top: 55%;
+}
+#home .info span{
+	padding: 0 5px;
+	animation: ease-in-out;
+	font-size: 30px;
+}
+#home .info span:hover{
+	background-color: red;
+	animation: ease-in-out;
+	padding: 0 5px;
+	color: #fff;
+	border-radius: 10px;
+}
+
+/*f16d
+f081
+f166 */
 @keyframes changetext{
 	25%{
 		content: 'A Developer';
 		color: #c6426e;
-			}
+	}
 	50%{
 		content: 'A Designer';
 		color: #1c92d2;
@@ -52,4 +73,19 @@ section{
 		color: #36D1DC;
 	}
 
+}
+@keyframes changeBg{
+	25%{
+		background-image: linear-gradient(to right, #36D1DC , #5B86E5);
+	}
+	50%{
+		background-image: linear-gradient(to right, #CB356B , #BD3F32);
+	}
+	75%{
+		background-image: linear-gradient(to right, #283c86 , #45a247);
+	}
+	100%{
+		background-image: linear-gradient(to right, #c0392b , #8e44ad);
+	}
+	
 }
