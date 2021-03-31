@@ -37,15 +37,19 @@ section{
 @keyframes changetext{
 	25%{
 		content: 'A Developer';
-	}
+		color: #c6426e;
+			}
 	50%{
 		content: 'A Designer';
+		color: #1c92d2;
 	}
 	75%{
 		content: 'A Content';
+		color: #0f9b0f;
 	}
 	100%{
 		content: 'A Play';
+		color: #36D1DC;
 	}
 
 }
