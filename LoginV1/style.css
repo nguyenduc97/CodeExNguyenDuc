@@ -131,9 +131,20 @@ form h2 span{
 	}
 	.checkPass{
 		text-align: center;
+		color: #fff;
+	}
+	.btnLogin{
+		background-color: #44dedbde;
+		color: #2b1a1ad9;
+	}
+	.btnLogin:hover{
+		background-color: #41d2cfde;
+	}
+	.loginDiv input{
+		transition: all 0.3s ease; 
 	}
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 799px) {
 	.container{
 		display: flex;
 		flex-direction: column;
@@ -153,11 +164,5 @@ form h2 span{
 	.loginDiv input::placeholder,.loginDiv input{
 		color: #fff;
 	}
-	.btnLogin{
-		background-color: #44dedbde;
-		color: #2b1a1ad9;
-	}
-	.btnLogin:hover{
-		background-color: #41d2cfde;
-	}
+
 }
