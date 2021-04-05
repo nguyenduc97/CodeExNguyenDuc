@@ -21,6 +21,8 @@ body{
 	left: 0;
 	bottom: 0;
 	z-index: -2;
+	background-image: url('svg/bg2.jpg');
+	background-repeat: repeat-x;
 	background-size: cover;
 	transition: 0.3s;
 }
@@ -128,7 +130,9 @@ form h2 span{
 	color: #134397;
 	font-weight: 700;
 	padding-bottom: 10px;
-
+}
+.checkPass:hover{
+	color: #f32322;
 }
 .i{
 	color: #134397;
