@@ -67,10 +67,15 @@ $(function() {
         $(this).closest('.ddc_container').find('[data-action="expand"] i').toggleClass('ft-maximize ft-minimize');
         $(this).closest('.ddc_container').toggleClass('card-fullscreen');
     });
+    // Toggle logout
     $('a[data-action="logout"]').on('click',function(){
         alert("Chức năng chưa làm, vui vòng coi console");
         console.log("Không làm mà đòi ăn à");
     });
+    // Toggle close
+     $('a[data-action="close"]').on('click',function(){
+            $(this).closest('.ddc_container').removeClass().slideUp('fast');
+        });
 });
 
 function addInput() {
