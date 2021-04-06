@@ -1,0 +1,36 @@
+.ddc_infoTable{
+	background-color: #ffffff;
+	z-index: 9999;
+	position: fixed;
+	top: 60vh;
+	width: calc(100% - 3.7rem);
+	height: 40vh;
+	border-top: 1px solid #30bcbf;
+	display: none;
+	bottom: 10px;
+}
+.ddc_infoTable .ddc_infoHead{
+	padding: 5px;
+	border-bottom: 1px solid black;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 500;
+	background-color: #f5f7fa;
+	display: grid;
+    grid-template-columns: 50% 50%;
+}
+.ddc_infoTable .ddc_infoBody{
+	width: 100%;
+	height: calc(40vh - 43px);
+}
+.ddc_infoTable .ddc_infoFooter{
+	padding: 10px;
+	border-top: : 1px solid black;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 500;
+	background-color: #f5f7fa;
+}
+.dcc_margin_top h6{
+	margin-top: 5px;
+}

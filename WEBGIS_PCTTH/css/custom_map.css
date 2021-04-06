@@ -1,0 +1,47 @@
+.dgrid {
+	font-size: 14px;
+}
+.ddc_location{
+	background-color: #000000;
+	opacity: 0.5;
+	color: #ffffff;
+	font-size: 12px;
+}
+.dcc_margin_4{
+	margin-left: 4px;
+	margin-right: 4px;
+}
+.dcc_margin_10{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.ddc_location i{
+	padding: 3px;
+	border-right: solid 1px #ffffff;
+	margin-right: 4px;
+}
+.esri-ui-bottom-right{
+	display: initial !important;
+}
+.esri-scale-bar{
+	margin-bottom: 4px !important;
+}
+.action-button {
+	font-size: 16px;
+	background-color: transparent;
+	border: 1px solid #d3d3d3;
+	color: #6e6e6e;
+	text-align: center;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.action-button:hover,
+.action-button:focus {
+	background: #0079c1;
+	color: #e4e4e4;
+}
+
+.active {
+	background: #ebedef;
+	color: #e4e4e4;
+}
