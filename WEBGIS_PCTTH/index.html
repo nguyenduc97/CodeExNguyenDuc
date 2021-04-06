@@ -48,17 +48,17 @@
                 <div class="col-12">
                     <div class="row">
                         <div class="col-md-4 pl-2 pr-1">
-                            <div class="ddc_container">
+                            <div class="ddc_container" id="ddc_map">
                                 <div class="ddc_headRow">
                                     <h4>Bản đồ kiểm tra lưới điện - Thừa Thiên Huế</h4>
                                     <div class="heading-elements">
                                         <ul class="list-inline mb-0">
-                                            <li>
+                                            <li rel="popover" data-trigger="hover" data-content="Thu gọn">
                                                 <a data-action="collapse">
                                                     <i class="ft-minus"></i>
                                                 </a>
                                             </li>
-                                            <li>
+                                            <li rel="popover" data-trigger="hover" data-content="Phóng to">
                                                 <a data-action="expand">
                                                     <i class="ft-maximize"></i>
                                                 </a>
@@ -77,12 +77,12 @@
                                     <h4>Biểu đồ</h4>
                                     <div class="heading-elements">
                                         <ul class="list-inline mb-0">
-                                            <li>
+                                            <li rel="popover" data-trigger="hover" data-content="Thu gọn">
                                                 <a data-action="collapse">
                                                     <i class="ft-minus"></i>
                                                 </a>
                                             </li>
-                                            <li>
+                                            <li rel="popover" data-trigger="hover" data-content="Phóng to">
                                                 <a data-action="expand">
                                                     <i class="ft-maximize"></i>
                                                 </a>
@@ -103,12 +103,12 @@
                                     <h4>Quản lý tài sản</h4>
                                     <div class="heading-elements">
                                         <ul class="list-inline mb-0">
-                                            <li>
+                                            <li rel="popover" data-trigger="hover" data-content="Thu gọn">
                                                 <a data-action="collapse">
                                                     <i class="ft-minus"></i>
                                                 </a>
                                             </li>
-                                            <li>
+                                            <li rel="popover" data-trigger="hover" data-content="Phóng to">
                                                 <a data-action="expand">
                                                     <i class="ft-maximize"></i>
                                                 </a>
@@ -117,87 +117,91 @@
                                     </div>
                                 </div>
                                 <div class="card-content collapse show">
-                                    <div class="card-body row ddc_qlts">
+                                    <div class="row ddc_qlts">
                                         <div class="col-md-4">
-                                            <span class="ddc_slts">1520</span>
-                                            <p>Tên</p>
+                                            <span class="ddc_slts">12,200</span>
+                                            <p>Trạm biến áp</p>
                                         </div>
                                         <div class="col-md-4">
-                                            <span class="ddc_slts">1520</span>
-                                            <p>Tên</p>
+                                            <span class="ddc_slts">3,000</span>
+                                            <p>Cột điện</p>
                                         </div>
                                         <div class="col-md-4">
-                                            <span class="ddc_slts">1520</span>
-                                            <p>Tên</p>
+                                            <span class="ddc_slts">33,900</span>
+                                            <p>Thiết bị đóng cắt</p>
                                         </div>
                                         <div class="col-md-4">
-                                            <span class="ddc_slts">1520</span>
-                                            <p>Tên</p>
+                                            <span class="ddc_slts">33,900</span>
+                                            <p>Đường day(KM)</p>
                                         </div>
                                         <div class="col-md-4">
-                                            <span class="ddc_slts">1520</span>
-                                            <p>Tên</p>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <span class="ddc_slts">1520</span>
-                                            <p>Tên</p>
-                                        </div>
-                                    </div>
+                                           <span class="ddc_slts">33,900</span>
+                                           <p>Hình ảnh</p>
+                                       </div>                                        
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="ddc_container">
+                            <div class="ddc_headRow">
+                                <h4>Thống kê chi tiết</h4>
+                                <div class="heading-elements">
+                                    <ul class="list-inline mb-0">
+                                        <li rel="popover" data-trigger="hover" data-content="Thu gọn"><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                        <li rel="popover" data-trigger="hover" data-content="Phóng to"><a data-action="expand"><i class="ft-maximize"></i></a></li>             
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="ddc_container">
-                                <div class="ddc_headRow">
-                                    <h4>Thống kê chi tiết</h4>
-                                    <div class="heading-elements">
-                                        <ul class="list-inline mb-0">
-                                            <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
-                                            <li><a data-action="expand"><i class="ft-maximize"></i></a></li>             
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="card-content collapse show">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="ddc_rowInrow">
-                                                    <div class="ddc_headInrow">
-                                                        <h5>Trạm biến áp</h5>
-                                                    </div>
-                                                    <div class="ddc_bodyInrow">
-                                                        <span class="ddc_icon">VD</span>
-                                                        <span class="ddc_bodyText">
-                                                            <div class="ddc_nameInrow">
-                                                                <p class="ddc_headName">Lorem</p>
-                                                                <p class="ddc_bodyName">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, numquam? Porro esse incidunt dolorum adipisci nobis? Voluptates nemo ipsam quaerat veniam aut error, aliquid nobis praesentium rem libero pariatur voluptatum?</p>
-                                                            </div>
-                                                        </span>
-                                                    </div>        
+                            <div class="card-content collapse show">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="ddc_rowInrow">
+                                                <div class="ddc_headInrow">
+                                                    <h5>Trạm biến áp</h5>
                                                 </div>
+                                                <div class="ddc_bodyInrow">
+                                                    <span class="ddc_icon">HB</span>
+                                                    <span class="ddc_bodyText">
+                                                        <div class="ddc_nameInrow">
+                                                            <p class="ddc_headName">Hợp bộ</p>
+                                                            <p class="ddc_bodyName">Số lượng: 12345</p>
+                                                        </div>
+                                                    </span>
+                                                </div>        
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="ddc_rowInrow">
-                                                    <div class="ddc_headInrow">
-                                                        <h5>Trạm biến áp</h5>
-                                                    </div>
-                                                    <div class="ddc_bodyInrow">
-                                                        <span class="ddc_icon">VD</span>
-                                                        <span class="ddc_bodyText">
-                                                            <div class="ddc_nameInrow">
-                                                                <p class="ddc_headName">Lorem</p>
-                                                                <p class="ddc_bodyName">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, numquam? Porro esse incidunt dolorum adipisci nobis? Voluptates nemo ipsam quaerat veniam aut error, aliquid nobis praesentium rem libero pariatur voluptatum?</p>
-                                                            </div>
-                                                        </span>
-                                                    </div>  
-                                                    <div class="ddc_bodyInrow">
-                                                        <span class="ddc_icon">VD</span>
-                                                        <span class="ddc_bodyText">
-                                                            <div class="ddc_nameInrow">
-                                                                <p class="ddc_headName">Lorem</p>
-                                                                <p class="ddc_bodyName">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, numquam? Porro esse incidunt dolorum adipisci nobis? Voluptates nemo ipsam quaerat veniam aut error, aliquid nobis praesentium rem libero pariatur voluptatum?</p>
-                                                            </div>
-                                                        </span>
-                                                    </div>          
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="ddc_rowInrow">
+                                                <div class="ddc_headInrow">
+                                                    <h5>Cột điện</h5>
                                                 </div>
+                                                <div class="ddc_bodyInrow">
+                                                    <span class="ddc_icon">HT</span>
+                                                    <span class="ddc_bodyText">
+                                                        <div class="ddc_nameInrow">
+                                                            <p class="ddc_headName">Hạ thế</p>
+                                                            <p class="ddc_bodyName">Số lượng: 12345</p>
+                                                        </div>
+                                                    </span>
+                                                </div>  
+                                                <div class="ddc_bodyInrow">
+                                                    <span class="ddc_icon">TT</span>
+                                                    <span class="ddc_bodyText">
+                                                        <div class="ddc_nameInrow">
+                                                            <p class="ddc_headName">Trung thế</p>
+                                                            <p class="ddc_bodyName">Số lượng: 12345</p>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                                <div class="ddc_bodyInrow">
+                                                    <span class="ddc_icon">TH</span>
+                                                    <span class="ddc_bodyText">
+                                                        <div class="ddc_nameInrow">
+                                                            <p class="ddc_headName">Trung hạ thế kết hợp</p>
+                                                            <p class="ddc_bodyName">Số lượng: 12345</p>
+                                                        </div>
+                                                    </span>
+                                                </div>        
                                             </div>
                                         </div>
                                     </div>
@@ -209,6 +213,7 @@
             </div>
         </div>
     </div>
+</div>
 </body>
 
 <script src="https://js.arcgis.com/4.12/"></script>

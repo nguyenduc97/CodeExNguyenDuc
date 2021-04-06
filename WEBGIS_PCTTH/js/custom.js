@@ -53,9 +53,17 @@ $(function() {
 
     });
     // Toggle fullscreen
+    var setFull =true;
     $('a[data-action="expand"]').on('click',function(e){
         e.preventDefault();
-        console.log(e);
+        var setWmap = $(this).closest('.ddc_container').find('#viewDiv');        
+        if(setWmap.length > 0 && setFull){
+            $('#viewDiv').css('height','90vh');
+            setFull = !setFull;
+        }else if(setWmap.length > 0 && setFull==false){
+            $('#viewDiv').css('height','50vh');
+            setFull = !setFull;
+        }
         $(this).closest('.ddc_container').find('[data-action="expand"] i').toggleClass('ft-maximize ft-minimize');
         $(this).closest('.ddc_container').toggleClass('card-fullscreen');
     });
