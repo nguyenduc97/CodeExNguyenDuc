@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'New Tegomin', serif;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+	background: #323232;
+}
+.loader{
+	position: relative;
+	/*-webkit-box-reflect: blow 1px linear-gradient(transparent,#0002);*/
+}
+.loader:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: #fff;
+	animation: MousesText 0.8s steps(3) infinite;
+}
+@keyframes MousesText{
+	0%,75%{
+		opacity: 1;
+	}
+	76%,100%{
+		opacity: 0;
+	}
+}
+.loader h2{
+	position: relative;
+	letter-spacing: 5px;
+	color: #fff;
+	font-size: 5rem;
+	text-transform: uppercase;
+	animation: RemoveText 18s steps(21) infinite;
+	overflow: hidden;
+}
+@keyframes RemoveText{
+	0%,90%,100%{
+		width: 0;
+	}
+	30%,60%{
+		width: 1113.09px;
+	}
+	
+}
