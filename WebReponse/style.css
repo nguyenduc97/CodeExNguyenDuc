@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+:root{
+	--color:#6C5CE7;
+}
+*{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	overflow-x: hidden;
+}
+.fa-bars{
+	display: none;
+	font-size: 1.5rem;
+	color: #fff;
+}
+.head{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 1rem 2rem;
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: 100;
+}
+.head a{
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: #fff;
+}
+.head a i{
+}
+.head nav ul{
+	list-style: none;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+}
+.head nav ul .active{
+	background-color: #fff;
+}
+.head nav ul .active a{
+	color: #000;
+}
+.head nav ul li{
+	padding: 5px 1.5rem;
+	transition: 0.3s ease-out;
+}
+.head nav ul li:hover{
+	background-color: #fff;
+}
+.head nav ul li:hover a{
+	color: #000;
+}
+.head nav ul li a{
+	text-transform: capitalize;
+}
+.home{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background:linear-gradient(purple, var(--color));
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	overflow: hidden;
+}
+.home h2{
+	font-size:4rem;
+	color: #fff;
+	text-transform: capitalize;
+	padding: 10px 20px;
+}
+.home p{
+	font-size:2rem;
+	color: #fff;
+	text-transform: capitalize;
+	padding: 10px 20px;
+}
+.home button{
+	outline: none;
+	box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+	border: 1px solid rgba(255,255,255,0.5);
+	border-right: 1px solid rgba(255,255,255,0.2);
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	padding: 10px 20px;
+	font-size: 1rem;
+	text-transform: capitalize;
+	background-color: #fff;
+	cursor: pointer;
+	transition: .5s ease-out;
+}
+
+.home button:hover{
+	background-color: #fff3f3;
+	letter-spacing: 2px;
+	color: #000;
+}
+.home .wave{
+	opacity: 0.9;
+	position: absolute;
+	bottom: -.5rem;
+	left: 0;
+	height:11rem;
+	width: 100%;
+	background: url(./wave.png);
+	background-size: 100rem 11rem;
+	background-repeat: repeat-x;
+	animation:waves 10s linear infinite;
+}
+.home .wave2{
+	animation-direction: reverse;
+	opacity: .2;
+}
+
+.home .wave3{
+	animation-duration: 4s;
+	opacity: .5;
+}
+@keyframes waves{
+	0%{
+		background-position-x: 0;
+	}
+	100%{
+		background-position-x: 100rem;
+	}
+}
+.home .fa-cog{
+	opacity: 0.5;
+	color: #fff;
+	animation:rotate 10s linear infinite;
+}
+.home .nut1{
+	position: absolute;
+	top: 10%;
+	left: -10%;
+	font-size: 30rem;
+}
+.home .nut2{
+	position: absolute;
+	top: 40%;
+	right: -5%;
+	font-size: 20rem;
+	animation-direction: reverse;
+}
+@keyframes rotate{
+	100%{
+		transform: rotate(360deg);
+	}	
+}
+@media (max-width: 991px){
+	.fa-bars{
+		display: block;
+		z-index: 99;
+		cursor: pointer;
+	}
+	.fa-bars.active{
+		color: #000;
+	}
+	.head nav{
+		position: fixed;		
+		top:-500px;		
+		transition: .2s ease-out;
+		width: 100%;
+		background-color: #fff;
+		height: auto;
+		left: 0;		
+		text-align: center;
+		align-items: center;
+	}
+	.head nav ul{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding: 10px;
+	}
+	.head nav.active{
+		top:0;
+	}
+	.head nav.active ul li{
+		padding: 20px;
+		cursor: pointer;
+	}
+	.head nav.active ul li:hover{
+		background-color: var(--color);
+	}
+	.head nav.active ul li a{
+		color: #000;
+	}
+}
