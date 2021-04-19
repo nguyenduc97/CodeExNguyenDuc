@@ -165,7 +165,7 @@ body{
 	}
 	.head nav{
 		position: fixed;		
-		top:-500px;		
+		top:-250px;		
 		transition: .2s ease-out;
 		width: 100%;
 		background-color: #fff;
@@ -182,10 +182,14 @@ body{
 	}
 	.head nav.active{
 		top:0;
+		border-top: 4px solid var(--color);
 	}
 	.head nav.active ul li{
 		padding: 20px;
 		cursor: pointer;
+	}
+	.head nav.active ul li.active{
+		background-color: #ccc;
 	}
 	.head nav.active ul li:hover{
 		background-color: var(--color);
